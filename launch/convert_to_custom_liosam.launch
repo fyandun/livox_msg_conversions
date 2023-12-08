@@ -1,0 +1,4 @@
+<launch>
+	<arg name = "lidar_topic" default="/livox/lidar"/> 
+	<node pkg="livox_msg_conversions" type="convert_livox_liosam.py" name="livox_msg_conversions" output="screen" args="$(arg lidar_topic)" />
+</launch>
